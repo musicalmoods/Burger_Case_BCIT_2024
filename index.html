@@ -11,7 +11,7 @@
     <title>Touring Burger</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
             background-color: #f7f7f7;
@@ -27,6 +27,10 @@
 
         .container {
             padding: 2em;
+            background-color: white;
+            border: 5px solid;
+            border-image-source: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            border-image-slice: 1;
         }
 
         .menu-item {
@@ -42,8 +46,12 @@
         .menu-item strong {
             display: inline-block;
             width: 100%;
-            font-size: 1.2em;
+            font-size: 1.5em;
             margin-bottom: 0.5em;
+        }
+
+        .menu-item ul {
+            padding-left: 1em;
         }
     </style>
 </head>
