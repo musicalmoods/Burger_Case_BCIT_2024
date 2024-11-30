@@ -6,7 +6,7 @@
     <meta name="author" content="musicalmoods">
     <meta http-equiv="refresh" content="120">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/20241130_092644.jpg">
+    <link rel="icon" href="assets/logo.jpg">
     <script defer src="app.js"></script>
     <title>Touring Burger</title>
     <style>
@@ -22,23 +22,32 @@
             background-color: #333;
             color: white;
             padding: 1em;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-and-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .header img {
+            height: 50px;
+            margin-right: 20px;
         }
 
         .container {
             padding: 2em;
             background-color: white;
             border: 5px solid #D2691E;
-            /* Classic retro brown color */
             border-radius: 0;
-            /* Remove the rounded corners */
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
         }
 
         .menu-item {
             margin-bottom: 1em;
             border-bottom: 2px dashed #D2691E;
-            /* Retro-style dashed line */
             padding-bottom: 1em;
         }
 
@@ -51,7 +60,6 @@
             width: 100%;
             font-size: 1.5em;
             color: #800000;
-            /* Retro dark red */
             margin-bottom: 0.5em;
         }
 
@@ -61,15 +69,19 @@
 
         h2 {
             color: #800000;
-            /* Matching retro dark red for headers */
         }
     </style>
 </head>
 
 <body>
     <div class="header">
-        <h1>Touring Burger</h1>
-        <p>Family owned since 1985</p>
+        <div class="logo-and-title">
+            <img src="assets/logo.jpg" alt="Touring Burger Logo">
+            <div class="title-container">
+                <h1>Touring Burger</h1>
+                <p>Family owned since 1985</p>
+            </div>
+        </div>
     </div>
 
     <div class="container">
