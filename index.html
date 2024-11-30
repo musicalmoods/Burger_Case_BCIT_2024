@@ -28,14 +28,17 @@
         .container {
             padding: 2em;
             background-color: white;
-            border: 5px solid;
-            border-image-source: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-            border-image-slice: 1;
+            border: 5px solid #D2691E;
+            /* Classic retro brown color */
+            border-radius: 0;
+            /* Remove the rounded corners */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
         }
 
         .menu-item {
             margin-bottom: 1em;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 2px dashed #D2691E;
+            /* Retro-style dashed line */
             padding-bottom: 1em;
         }
 
@@ -47,11 +50,18 @@
             display: inline-block;
             width: 100%;
             font-size: 1.5em;
+            color: #800000;
+            /* Retro dark red */
             margin-bottom: 0.5em;
         }
 
         .menu-item ul {
             padding-left: 1em;
+        }
+
+        h2 {
+            color: #800000;
+            /* Matching retro dark red for headers */
         }
     </style>
 </head>
